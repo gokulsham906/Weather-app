@@ -12,7 +12,7 @@ form.addEventListener("submit", searchForLocation);
 let targetLocation = "Lucknow";
 
 const fetchResults = async (targetLocation) => {
-    let url = `http://api.weatherapi.com/v1/current.json?key=c20b2b3e2ea74df1bfc11316252305&q=${targetLocation}&aqi=no`;
+    let url = `https://api.weatherapi.com/v1/current.json?key=c20b2b3e2ea74df1bfc11316252305&q=${targetLocation}&aqi=no`;
 
     const res = await fetch(url);
     const data = await res.json();
